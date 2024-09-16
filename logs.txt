@@ -1,0 +1,31 @@
+@0xAnsR ➜ /workspaces/debuging (main) $ curl -X POST https://oauth2.googleapis.com/token \
+>   -d "code=YOUR_AUTHORIZATION_CODE" \
+>   -d "client_id=715144864465-0si1ip7sqslli3ptg14ktl7mc0f71dqe.apps.googleusercontent.com" \
+>   -d "client_secret=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" \
+>   -d "redirect_uri=https://glowing-yodel-55j94rx6qg5c4j77.github.dev/oauth2callback" \
+>   -d "grant_type=authorization_code"
+{
+  "error": "invalid_grant",
+  "error_description": "Malformed auth code."
+}@0xAnsR ➜ /workspaces/debuging (main) $ @0xAnsR ➜ /workspaces/debuging (main) $ curl -X POST https://oauth2.googleapis.com/token \
+>   -d "code=YOUR_AUTHORIZATION_CODE" \
+>   -d "client_id=715144864465-0si1ip7sqslli3ptg14ktl7mc0f71dqe.apps.googleusercontent.com" \
+>   -d "client_secret=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" \
+>   -d "redirect_uri=https://glowing-yodel-55j94rx6qg5c4j77.github.dev/oauth2callback" \
+>   -d "grant_type=authorization_code"
+{
+  "error": "invalid_grant",
+  "error_description": "Malformed auth code."
+}@0xAnsR ➜ /workspaces/debuging (main) $ curl -X POST https://oauth2.googleapis.com/token \
+>   -d "code=4/0AQlEd8xX8zwCKjvzh5h0AH21TBOv5IPV6G-BtUbhEovX9la32Avdt9YA9Z4B_IG4jdfHDg" \
+>   -d "client_id=715144864465-0si1ip7sqslli3ptg14ktl7mc0f71dqe.apps.googleusercontent.com" \
+>   -d "client_secret=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" \
+>   -d "redirect_uri=https://glowing-yodel-55j94rx6qg5c4j77.github.dev/oauth2callback" \
+>   -d "grant_type=authorization_code"
+{
+  "access_token": "ya29.a0AcM612y2_ezHdRMa9__nGc_Xp1CnJ6bpYJTY-DDW-mjszLTWkVVfskDGTX_JPFsJjTIeTOfpbybRud_SfY_x41_w0ZMAESU5TtP4UNxnjq7RfqtKpJ4teaW0uaX5o2G5Wkh4FAfdZxph92lRSztj6P_oHiVuBlV6_qvu0h2zaCgYKAXcSARISFQHGX2MiahK9PAt-YE77PLL3HXUKVA0175",
+  "expires_in": 3599,
+  "refresh_token": "1//09lvpj0OyYkSnCgYIARAAGAkSNwF-L9Irw1kt2w1o2GizR_r3ORtkqET_9Xuxt3QBwdoGq84WbXv8Zz48nDsTjVYjJXB_BdzphE0",
+  "scope": "https://www.googleapis.com/auth/userinfo.email openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTUxNDQ4NjQ0NjUtMHNpMWlwN3Nxc2xsaTNwdGcxNGt0bDdtYzBmNzFkcWUuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTUxNDQ4NjQ0NjUtMHNpMWlwN3Nxc2xsaTNwdGcxNGt0bDdtYzBmNzFkcWUuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTQ5OTQ1NzczNzY3MDA4NDUzMzciLCJlbWFpbCI6ImFuc3JhemFvZmZpY2lhbEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImMwSmlWSkMtTF9ETUVjbFVXWmhQUXciLCJpYXQiOjE3MjY0NjE1MjEsImV4cCI6MTcyNjQ2NTEyMX0.NT-ABTASUQN__fHU6khw7aXxxs-gLUPBqo8lPN6g70iy4FquhamSHWhJlDAxAS7DajNGU--0Yb6bmb_GrQwrdt4P7OvXu9Sec0LivmJSTbODGfyJvpihbZ028I3vH6sCkCUnozWhHRGFiyOTp3WeXTEHAGNvBDB7dDS7WeQF4-1_xTwdijxqyMb7fWVgjjY8TddkNxGmgZUqbjVkXJx0qggKsYHPfaASBv01xdx780FR5rQN5PJWFqLaF_WAb9JtLNV2SFi8Lx6z_AgOhC8RF6VXCLnKu42YjE4zIVBNZy7kmH-tLTIEllaJWEHOFeCa9kPiTiZajqrk591YxAWIPg"
