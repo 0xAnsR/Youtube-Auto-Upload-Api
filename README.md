@@ -70,6 +70,34 @@ Ensure your application has a route to handle requests at `/oauth2callback`. Thi
 
 - **Redirect URI**: Ensure the redirect URI in your Google Cloud Console matches the one used in your application. If the URL of your Codespace changes, you will need to update this URI accordingly.
 - **OAuth Scopes**: Adjust the `scope` parameter in the authorization URL based on the specific permissions your application requires.
+When using Google OAuth in a Codespace (or any environment where localhost might not be accessible), you may encounter issues with the redirect URI. Here are some steps you can take to resolve this:
+
+1. Update the Redirect URI
+In your Google Cloud Console:
+
+Go to Credentials and find the OAuth 2.0 client ID you're using.
+Under Authorized redirect URIs, add the specific URL provided by Codespaces (usually something like https://<your-codespace>.preview.app/...) instead of http://localhost:8080.
+2. Use the run_console Method
+If you can't change the redirect URI easily, you can modify the code to use the console method for authentication. Change this line in the get_authenticated_service function:
+
+python
+Copy code
+credentials = flow.run_local_server()
+to:
+
+python
+Copy code
+credentials = flow.run_console()
+This will prompt you to manually enter the authorization code after visiting the URL.
+
+3. Environment Configuration
+Make sure your environment is set up correctly to handle the OAuth flow. Sometimes, using a different port or ensuring that your Codespace allows inbound connections is necessary.
+
+4. Test the Setup
+Once you make the changes, run your script again, and follow the prompts. You should be able to authenticate and upload your video.
+
+Let me know if you need further assistance!
+
 
 By following these steps, you should be able to integrate OAuth 2.0 with the YouTube API for video uploads using GitHub Codespaces.
 
