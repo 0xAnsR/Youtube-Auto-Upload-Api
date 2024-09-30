@@ -260,6 +260,9 @@ Copy code
 reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings" /v Enabled /t REG_DWORD /d 1 /f
 Restart Your Computer: After making changes, restart your computer to ensure they take effect.
 
+  localhost:8080?state=p5yFWIFy9L4RQsZsGlBoSKiSN3MP7g&code=4/0AVG7fiSBDNd53IXpwcCaxGl-DKi5LQOL6EUgEXvt5_5ZX4w9akTV98W-ZwaTtlUbbME6OQ&scope=https://www.googleapis.com/auth/youtube.upload  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+https://glowing-yodel-55j94rx6qg5c4j77-8080.app.github.dev/?state=p5yFWIFy9L4RQsZsGlBoSKiSN3MP7g&code=4/0AVG7fiSBDNd53IXpwcCaxGl-DKi5LQOL6EUgEXvt5_5ZX4w9akTV98W-ZwaTtlUbbME6OQ&scope=https://www.googleapis.com/auth/youtube.upload
+
 Test WSH
 You can create a simple test script as mentioned earlier to verify that WSH is functioning:
 
